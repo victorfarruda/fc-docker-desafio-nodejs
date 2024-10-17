@@ -7,6 +7,8 @@ services:
       context: ./app
     entrypoint: dockerize -wait tcp://db:3306 -timeout 20s ./entrypoint.sh
     container_name: app
+    volumes:
+      - ./app:/app
     networks:
       - net
     depends_on: 

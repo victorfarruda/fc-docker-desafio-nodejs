@@ -1,6 +1,6 @@
 FROM node:latest
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
 RUN apt-get update
 RUN apt-get install -y wget
